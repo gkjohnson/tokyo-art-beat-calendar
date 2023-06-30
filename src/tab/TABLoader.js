@@ -32,9 +32,11 @@ function tabToCalendarEvent( e ) {
     res.endTime = new Date( e.scheduleStartsOn );
     res.allDay = true;
 
-    res.description = `Runs from ${ e.scheduleStartsOn } to ${ e.scheduleEndsOn } at '${ e.venue.fields.fullName }'\n\n`;
-    res.description = `Admission ${ e.venue.fields.admissionFee } yen`
-    res.location = e.venue.fields.address;
+    res.description = `**Description**\nRuns from ${ e.scheduleStartsOn } to ${ e.scheduleEndsOn }'\n\n`;
+    res.description += `**Address**\n${ e.venue.fields.address }\n\n`;
+    res.description += `**Admission**\n${ e.venue.fields.admissionFee }`;
+
+    res.location = e.venue.fields.fullName;
 
     return res;
 
