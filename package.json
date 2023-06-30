@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/gkjohnson/generated-calendar/issues"
   },
-  "homepage": "https://github.com/gkjohnson/generated-calendar#readme"
+  "homepage": "https://github.com/gkjohnson/generated-calendar#readme",
+  "dependencies": {
+    "ics": "^3.2.0"
+  }
 }

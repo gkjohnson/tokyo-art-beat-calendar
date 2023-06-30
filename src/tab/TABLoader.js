@@ -1,5 +1,4 @@
 import { CalendarEvent } from '../core/CalendarEvent.js';
-import { dateToDay } from '../core/CSVGenerator.js';
 
 function traverse( data, cb ) {
 
@@ -49,9 +48,9 @@ export class TABLoader {
 
     }
     
-    load() {
+    load( url ) {
 
-        return fetch( 'https://www.tokyoartbeat.com/_next/data/Y9bBY7-1sd9mQZDAcn0HT/en/events/orderBy/latest.json?q=orderBy&q=latest' )
+        return fetch( url )
             .then( res => res.json() )
             .then( json => {
 
