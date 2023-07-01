@@ -5,6 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "regenerate": "node src/index.js > TAB_EVENTS.ics",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/gkjohnson/generated-calendar#readme",
   "dependencies": {
-    "ics": "^3.2.0"
+    "ics": "^3.2.0",
+    "puppeteer": "^20.7.4"
   }
 }
