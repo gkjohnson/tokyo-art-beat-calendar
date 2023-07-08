@@ -32,4 +32,4 @@ jobs:
       with:
         add: 'TAB_EVENTS.ics'
         message: 'update calendar'
-        push: 'origin HEAD:examples --force'
+        push: 'origin main --force'
