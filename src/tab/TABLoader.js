@@ -62,7 +62,9 @@ export class TABLoader {
 
                 } ).data;
 
-                return events.map( e => tabToCalendarEvent( e ) );
+                return events
+                    .filter( e => ! ! e.scheduleStartsOn )
+                    .map( e => tabToCalendarEvent( e ) );
 
             } );
 
