@@ -5,6 +5,7 @@ name: Build Calendar
 
 on:
   schedule:
+    # every monday at at 1pm
     - cron: 0 12 * * 1
   push:
     branches: [ main ]
