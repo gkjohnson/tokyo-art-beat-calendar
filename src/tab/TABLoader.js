@@ -33,8 +33,7 @@ function tabToCalendarEvent( e ) {
     res.allDay = true;
 
     res.description = `**Description**\nRuns from ${ e.scheduleStartsOn } to ${ e.scheduleEndsOn }'\n\n`;
-    res.description += `**Address**\n${ e.venue.fields.address }\n\n`;
-    res.description += `**Admission**\n${ e.venue.fields.admissionFee }`;
+    res.description += `**Address**\n${ e.venue.fields.fullName }\n\n`;
 
     res.location = e.venue.fields.fullName;
 

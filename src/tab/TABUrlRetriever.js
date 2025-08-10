@@ -14,7 +14,7 @@ export class TABUrlRetriever {
 
             page.on( 'request', request => {
 
-                if ( /latest\.json/.test( request.url() ) ) {
+                if ( /events\.json/.test( request.url() ) ) {
 
                     url = request.url();
                     resolve();

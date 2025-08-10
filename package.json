@@ -19,6 +19,6 @@
   "homepage": "https://github.com/gkjohnson/tokyo-art-beat-calendar#readme",
   "dependencies": {
     "ics": "^3.2.0",
-    "puppeteer": "^20.7.4"
+    "puppeteer": "^24.16.0"
   }
 }
