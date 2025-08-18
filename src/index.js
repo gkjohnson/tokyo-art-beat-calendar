@@ -5,6 +5,9 @@ import { TABUrlRetriever } from './tab/TABUrlRetriever.js';
 
 ( async () => {
 
+    // use the JST timezone when interpreting dates.
+    process.env.TZ = 'Asia/Tokyo';
+
     const url = await new TABUrlRetriever().load();
     const results = await new TABLoader().load( url );
 
